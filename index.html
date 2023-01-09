@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Credit Card checkouts</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cart">
+        <header class="title">Your Cart</header>
+        <div class="wrapper">
+          <div class="items">
+            <div class="item">
+              <img src="images/nike.svg" alt="Nike shoes" class="item__image" />
+              <span class="item__details border-bottom">
+                <div class="item__detail">
+                  <span class="item__name">Nike Revolution 6 Next Nature</span>
+                  <span class="item__specification">41.5 EU / 8 US</span>
+                </div>
+                <div class="item__price">
+                  <span class="item__price">$ 100</span>
+                </div>
+              </span>
+            </div>
+            <div class="item">
+              <img src="images/jordan.svg" alt="Jordan" class="item__image" />
+              <span class="item__details border-bottom">
+                <div class="item__detail">
+                  <span class="item__name">Jordan Luka 1</span>
+                  <span class="item__specification">42.5 EU / 9 US</span>
+                </div>
+                <div class="item__price">
+                  <span class="item__price">$ 110</span>
+                </div>
+              </span>
+            </div>
+            <div class="item">
+              <img src="images/moab.svg" alt="Moeb" class="item__image" />
+              <span class="item__details">
+                <div class="item__detail">
+                  <span class="item__name"
+                    >Moab 2 Waterproof - Drizzle/Mint</span
+                  >
+                  <span class="item__specification">42 EU / 8.5 US</span>
+                </div>
+                <div class="item__price">
+                  <span class="item__price">$ 80</span>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+      </div>
+      <div class="payment">
+        <header class="title">Payment Method</header>
+        <div class="wrapper">
+          <div class="payment__methods">
+            <span class="payment__method border-bottom">Strip</span>
+            <span class="payment__method border-bottom">Visa</span>
+            <img
+              src="images/master-card.svg"
+              alt=" master Card",
+              class="border-bottom"
+            />
+            <img src="images/paypal.svg" alt="Paypal" />
+            <img src="images/apple.svg" alt="Apple" />
+          </div>
+          <form action="#" class="payment__user">
+            <div class="payment__user__details">
+              <label for="name" class="payment__user__label">Email Address</label>
+              <input
+                type="email"
+                id="name"
+                class="payment__user__input"
+                placeholder="Enter your email"
+                value="nimatullah.razmjo@gmail.com"
+              />
+              <img src="images/check.svg" alt="check" class="check" />
+            </div>
+
+            <div class="payment__user__details">
+              <label for="name" class="payment__user__label">Card Holder</label>
+              <input
+                type="text"
+                id="name"
+                class="payment__user__input"
+                placeholder="Enter your name"
+                value="Nimatullah Razmjo"
+              />
+              <img src="images/check.svg" alt="check" class="check success" />
+            </div>
+
+            <div class="card">
+              <label for="card" class="payment__user__label">Card Number</label>
+              <span class="card__details">
+                <input
+                type="text"
+                id="card"
+                class="card__input number"
+                placeholder="Enter your card number",
+                value="1234 5678 901"
+              />
+              <input
+                type="text"
+                id="date"
+                class="card__input expiry"
+                placeholder="MM / YY"
+              />
+              <input
+                type="number"
+                id="cvc"
+                class="card__input cvc"
+                placeholder="CVC"
+              />
+              </span>
+            </div>
+            <div class="payment__total">
+              <span class="payment__total__title">Sub Total</span>
+              <span class="payment__total__price">$ 290</span>
+
+              <span class="payment__total__title">Shiping</span>
+              <span class="payment__total__price">$ 20</span>
+
+              <span class="payment__total__title bold">Total</span>
+              <span class="payment__total__price bold">$ 310</span>
+
+            </div>
+            <button class="payment__user__button">Check Out</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

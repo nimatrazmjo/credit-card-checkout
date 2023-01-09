@@ -1,0 +1,215 @@
+:root {
+  --color-gray-900: #111827;
+  --color-gray-500: #6B7280;
+  --color-gray-400: #9CA3AF;
+  --color-gray-100: #F3F4F6;
+  --color-slate-200: #E2E8F0;
+  --color-slate-100: #F3F4F6;
+  --color-slate-50: #F9FAFB;
+  --border-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Satoshi", sans-serif;
+  background-color: var(--color-slate-200);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--color-gray-400);
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 5rem auto;
+  box-shadow: var(--border-shadow);
+  background-color: var(--color-slate-50);
+  display: flex;
+}
+
+.cart {
+  flex: 1;
+}
+
+.payment {
+  flex: 1;
+  background-color: var(--color-gray-100);
+}
+
+.wrapper {
+  margin: 0 3.3rem;
+}
+
+.wrapper_container {
+  position: relative;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--color-gray-900);
+  line-height: 21.6px;
+  margin-bottom: 1.6rem;
+  padding: 2.4rem 1.6rem;
+  border-bottom: 1px solid var(--color-gray-400);
+}
+
+.items {
+  flex-grow: 1;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+.item__image {
+  width: 6rem;
+  height: 2.7rem;
+  margin-right: 2.6rem;
+}
+.item__details {
+  display: flex;
+  width: 100%;
+}
+.item__detail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2.6rem 0;
+}
+.item__name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.item__specification {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.item__price {
+  padding: 2.6rem 0;
+}
+
+.payment__methods {
+  font-size: 1.4rem;
+  display: flex;
+}
+.payment__methods img {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 1.6rem;
+}
+.payment__method {
+  margin: 0 1rem 2em 0;
+  padding-bottom: 1rem;
+}
+.payment__user__details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.payment__user__input {
+  margin: 0 0 1rem 0;
+  padding: 1rem 1rem 1rem 0;
+  border: none;
+  background-color: var(--color-gray-300);
+  color: var(--color-gray-900);
+  border-bottom: 1px solid var(--color-gray-400);
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  width: 100%;
+  outline: none;
+}
+.payment__user__label {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-gray-500);
+}
+.payment__user__button {
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  width: 100%;
+  outline: none;
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-100);
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+.payment__total {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+  line-height: 3.5rem;
+  color: var(--color-gray-500);
+  margin-bottom: 2.6rem;
+}
+.payment__total__title {
+  flex: 0 0 50%;
+}
+.payment__total__price {
+  flex: 0 0 50%;
+  text-align: end;
+}
+
+.bold {
+  font-weight: 900;
+  color: var(--color-gray-900);
+}
+
+.check {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 3.3rem;
+  right: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.card__details {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.card__input {
+  margin: 0 0 1rem 0;
+  padding: 1rem 1rem 1rem 0;
+  border: none;
+  background-color: var(--color-gray-300);
+  color: var(--color-gray-900);
+  border-bottom: 1px solid var(--color-gray-400);
+  font-size: 1.4rem;
+  outline: none;
+}
+.card .number {
+  flex: 2 0 0;
+}
+.card .date {
+  flex: 1 0 0;
+}
+.card .cvc {
+  width: 10rem;
+}
+
+/*# sourceMappingURL=style.css.map */

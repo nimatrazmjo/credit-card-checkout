@@ -1,0 +1,37 @@
+:root {
+    --color-gray-900: #111827;
+    --color-gray-500: #6B7280;
+    --color-gray-400: #9CA3AF;
+    --color-gray-100: #F3F4F6;
+
+    --color-slate-200: #E2E8F0;
+    --color-slate-100: #F3F4F6;
+    --color-slate-50: #F9FAFB;
+    --border-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    font-family: 'Satoshi', sans-serif;
+    background-color: var(--color-slate-200);
+}
+
+
+.border-bottom {
+    border-bottom: 1px solid var(--color-gray-400);
+}
+
+
+// Path: scss/_components.scss

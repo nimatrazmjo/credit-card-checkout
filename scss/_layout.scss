@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 5rem auto;
+  box-shadow: var(--border-shadow);
+  background-color: var(--color-slate-50);
+
+  display: flex;
+}
+
+.cart {
+    flex: 1;
+}
+
+.payment {
+    flex: 1;
+    background-color: var(--color-gray-100);
+}
+
+.wrapper{
+  margin: 0 3.3rem;
+}
+
+.wrapper_container {
+  position: relative;
+}
+
+
+
