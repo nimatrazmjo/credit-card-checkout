@@ -37,11 +37,19 @@ html {
   margin: 5rem auto;
   box-shadow: var(--border-shadow);
   background-color: var(--color-slate-50);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 75rem) {
+  .container {
+    margin: 0;
+  }
 }
 
 .cart {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .payment {
@@ -51,6 +59,7 @@ html {
 
 .wrapper {
   margin: 0 3.3rem;
+  margin-bottom: auto;
 }
 
 .wrapper_container {
@@ -141,7 +150,7 @@ html {
   color: var(--color-gray-500);
 }
 .payment__user__button {
-  margin: 0 0 1rem 0;
+  margin: 0 0 3rem 0;
   padding: 1rem;
   border: 1px solid var(--color-gray-300);
   border-radius: 0.5rem;
@@ -193,7 +202,7 @@ html {
   flex-wrap: nowrap;
 }
 .card__input {
-  margin: 0 0 1rem 0;
+  margin: 0 0 3rem 0;
   padding: 1rem 1rem 1rem 0;
   border: none;
   background-color: var(--color-gray-300);
@@ -208,8 +217,22 @@ html {
 .card .date {
   flex: 1 0 0;
 }
+@media only screen and (max-width: 75rem) {
+  .card .date {
+    flex: 0 0 5rem;
+  }
+}
 .card .cvc {
   width: 10rem;
+}
+@media only screen and (max-width: 75rem) {
+  .card .cvc {
+    width: 5rem;
+  }
+}
+
+.logo {
+  margin: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
